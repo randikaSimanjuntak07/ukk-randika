@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Invitation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Gochi+Hand&family=Tilt+Neon&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: "Tilt Neon", sans-serif;
+        }
+        .font-accent {
+            font-family: "Fredoka", sans-serif;
+        }
+        .font-latin {
+            font-family: "Gochi Hand", cursive;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- cover undangan -->
+    <section
+        class="text-center mx-auto h-screen w-full max-w-lg flex items-center justify-center flex-col bg-cover bg-center"
+        style="background-color: #FDF4EF;"
+    >
+        <div class="h-full w-full text-center mx-auto h-screen w-full flex items-center justify-center flex-col" style="position: relative; z-index: 99;">
+            <div class="mx-auto mb-4 size-48 rounded-full aspect-square overflow-hidden">
+                <img class="size-full object-cover" src="image/gallery-1.jpg" alt="" height="150" width="150">
+            </div>
+            <div class="mb-4 text-7xl font-bold font-accent" data-aos="zoom-in" data-aos-duration="3000">Baby's</div>
+            <div class="mb-16" data-aos="zoom-in" data-aos-duration="3000">is turning one!</div>
+            <div data-aos="zoom-in" data-aos-duration="3000">
+                <div class="mb-2">Kepada Yth <br>Bapak/Ibu/Saudara/i</div>
+                <div class="mb-6 font-bold">Nama Tamu</div>
+                <a
+                    id="btnBuka"
+                    href="#isiUndangan"
+                    class="bg-orange-500 text-white py-3 px-6 rounded-xl hover:bg-orange-700"
+                >Open Invitation</a>
+            </div>
+        </div>
+    </section>
+    <!-- isi undangan -->
+    <div
+        id="isiUndangan"
+        class="hidden overflow-hidden bg-orange-50 relative text-center mx-auto w-full max-w-lg flex items-center justify-center flex-col"
+    >
+        <section class="px-6 py-12 w-full relative">
+            <div class="mx-auto w-full max-w-[26rem]">
+                <p class="mx-auto max-w-80 text-3xl font-bold">WELCOME TO</p>
+                <div class="text-8xl font-bold font-accent text-orange-500" data-aos="zoom-in" data-aos-duration="3000">1st</div>
+                <p class="mx-auto max-w-80 mb-6 text-3xl font-bold">RIZKI BIRTHDAY PARTY</p>
+                <div class="flex items-center justify-center gap-3 mb-6">
+                    <div class="text-7xl font-bold">1</div>
+                    <div class="text-left text-2xl font-bold">
+                        <div>SABTU</div>
+                        <div>JAN 2025</div>
+                    </div>
+                    <div class="h-20 w-0.5 bg-orange-500"></div>
+                    <div class="text-left text-2xl font-bold">
+                        <div>20.00 WIB</div>
+                        <div>s.d SELESAI</div>
+                    </div>
+                </div>
+                <div id="countDown" class="flex justify-center gap-2 mb-8 border" data-aos="fade-up" data-aos-duration="3000">
+                    <div class="w-full bg-orange-500 text-white p-3 rounded-md">
+                        <p id="day" class="text-2xl"></p>
+                        <p class="text-sm">Hari</p>
+                    </div>
+                    <div class="w-full bg-orange-500 text-white p-3 rounded-md">
+                        <p id="hour" class="text-2xl"></p>
+                        <p class="text-sm">Jam</p>
+                    </div>
+                    <div class="w-full bg-orange-500 text-white p-3 rounded-md">
+                        <p id="minute" class="text-2xl"></p>
+                        <p class="text-sm">Menit</p>
+                    </div>
+                    <div class="w-full bg-orange-500 text-white p-3 rounded-md">
+                        <p id="second" class="text-2xl"></p>
+                        <p class="text-sm">Detik</p>
+                    </div>
+                </div>
+
+                <h2 class="font-latin text-4xl mb-4">Alamat</h2>
+                <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, dolorum fuga quae hic nobis eveniet ipsum.</p>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="inline-block mb-8 bg-orange-500 text-white py-3 px-6 rounded-xl hover:bg-orange-700">Buka Google Maps</a>
+            </div>
+        </section>
+
+        <section class="px-6 py-12 w-full relative">
+            <div class="mx-auto w-full max-w-[26rem]">
+                <h2 class="font-latin text-4xl mb-4">Our Memories</h2>
+                <div class="grid grid-cols-2 gap-2 mb-2">
+                    <div class="aspect-square overflow-hidden">
+                        <img class="size-full object-cover" src="/no-image.webp" alt="" height="150" width="150">
+                    </div>
+                    <div class="aspect-square overflow-hidden">
+                        <img class="size-full object-cover" src="/no-image.webp" alt="" height="150" width="150">
+                    </div>
+                    <div class="aspect-square overflow-hidden">
+                        <img class="size-full object-cover" src="/no-image.webp" alt="" height="150" width="150">
+                    </div>
+                    <div class="aspect-square overflow-hidden">
+                        <img class="size-full object-cover" src="/no-image.webp" alt="" height="150" width="150">
+                    </div>
+                    <div class="aspect-square overflow-hidden">
+                        <img class="size-full object-cover" src="/no-image.webp" alt="" height="150" width="150">
+                    </div>
+                    <div class="aspect-square overflow-hidden">
+                        <img class="size-full object-cover" src="/no-image.webp" alt="" height="150" width="150">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="px-6 py-12 w-full min-h-[40rem] text-center flex flex-col justify-center items-center">
+            <p class="mx-auto max-w-80 text-5xl font-latin font-bold text-orange-500">Thank you for<br>Your atention<br>Hope to see you<br>at the event</p>
+        </section>
+    </div>
+
+    <!-- lagu start -->
+    <audio 
+        id="music" 
+        src="musik/38-Michael-Riepen-Happy-Birthday(chosic.com).mp3" 
+        loop
+    >
+    </audio>
+    <!-- lagu end -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
